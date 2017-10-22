@@ -1,0 +1,213 @@
+@keyframes leftShift{
+	0%   {right:50%;}
+    100% {right:100%;}
+}
+
+@keyframes rightShift{
+	0%   {left:50%;}
+    100% {left:100%;}
+}
+
+@keyframes fadeOut{
+	0% {opacity:1;}
+	100% {opacity:0;}
+}
+
+body,head{
+	margin:0px;
+	padding:0px;
+	background-color: #d3d3d3;
+}
+
+#loading{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	visibility: hidden;
+	left:20%;
+	top:30%;
+	animation-name: fadeOut;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}
+
+#romanticLeft{
+width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;	
+}
+
+#fugueRight{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+	left:50%;
+}
+
+#recordLeft{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+	visibility: hidden;
+}
+
+#keyboardRight{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+	left:50%;
+	visibility: hidden;
+}
+
+#recordLeftS{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+}
+
+#keyboardRightS{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+	left:50%;
+}
+
+#leftAnimateOut{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+	animation-fill-mode: forwards;
+	animation-name: leftShift;
+	animation-duration: 1s;
+
+}
+
+#rightAnimateOut{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+	animation-fill-mode: forwards;
+	animation-name: rightShift;
+	animation-duration: 1s;
+	
+}
+
+#leftAnimateIn{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+	animation-fill-mode: forwards;
+	animation-name: leftShift;
+	animation-duration: 1s;
+	animation-direction: reverse;
+}
+
+#rightAnimateIn{
+	width:50%;
+    height:100%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color:white;
+	animation-fill-mode: forwards;
+	animation-name: rightShift;
+	animation-duration: 1s;
+	animation-direction: reverse;
+}
+
+#recordBackgroundH{
+	background: radial-gradient(#8cb8ff, #5495ff, #4388f9);
+}
+
+
+
+#microphoneRecord{
+	width:50%;
+    height:85%;
+	left:30%;
+	top:10%;
+    position:fixed;
+	border: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	font-size: 70px;
+	background-position: center center;
+	visibility:hidden;
+	background: url('Resources\\microphoneIcon.png');
+	background-size: fill;
+	background-size: 85%;
+}
+
+#microphoneRecordActive{
+	left:38%;
+	top:20%;
+	background: #f00;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+	position:fixed;
+	border: none;
+	background-position: center center;
+	animation-name: fadeOut;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}

@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="Styles.css">
+		<link rel="stylesheet" type="text/css" href="Audio.css">
+		<script src="animation.js"></script>
+		<script src="MicInput.js"></script>
+		<script src="Visualization.js"></script>		
+	</head>
+	<body>
+		<button id="romanticLeft" onclick = "leftAnimationOut(this,true);" style="background: url('Resources\\Romantic.jpg');background-size: fill;">Romantic Styled Music</button>
+		<button id="fugueRight" onclick = "rightAnimationOut(this,true);" style="background: url('Resources\\Organ.jpg');background-size: contain;"><text>Fugue Styled Music</text></button>
+		<button id="recordLeft" onclick = "leftAnimationOut(this,true);" style="background: url('Resources\\Microphone1a.jpg');background-size: fill;background-size: 100%;">Record Music</button>
+		<button id="keyboardRight" onclick = "rightAnimationOut(this,true);" style="background: url('Resources\\Score.jpg');background-size: fill;">Computer Generated</button>
+		<button id="microphoneRecord" onclick="micRecord()">
+		<div id="content">
+		<canvas id="canvas" ></canvas>
+		<audio id="audio" >Something</audio>
+		</div>
+		<h1 id ="loading">LOADING...</h1>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<body>
+		<audio id ="audio" controls>cust</audio>
+		<button onClick="recorder.stop(callBack)">Cust</button>
+		<div id="demo"></div>
+	</body>
+		<script src="MicInput.js"></script>
+		<script>
+		var player = document.getElementById('player');
+		recorder.start();
+
+		function callBack(i){
+		}
+
+		function blobToFile(theBlob, fileName){
+			theBlob.lastModifiedDate = new Date();
+			theBlob.name = fileName;
+			console.log("cust");
+			return theBlob;
+		}
+
+		function midiBack(uuid){
+			document.getElementById("audio").src="http://13.82.60.131:8000/"+uuid+".mp3"
+		}
+		</script>
+	</head>
+	
+</html>
